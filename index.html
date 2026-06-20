@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Coached by Alistair</title>
+	<style>
+		:root{--brand:#2b6cb0;--accent:#f6ad55;--bg:#f7fafc}
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;background:var(--bg);color:#1a202c}
+		header{background:white;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+		.container{max-width:1000px;margin:0 auto;padding:24px}
+		.brand{display:flex;align-items:center;gap:12px}
+		.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#63b3ed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+		nav{margin-left:auto}
+		nav a{color:var(--brand);text-decoration:none;margin-left:16px;font-weight:600}
+		.hero{display:flex;flex-wrap:wrap;gap:24px;align-items:center;padding:48px 0}
+		.hero .intro{flex:1;min-width:260px}
+		h1{margin:0 0 12px;font-size:28px}
+		p.lead{margin:0 0 18px;color:#4a5568}
+		.cta{background:var(--brand);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+		.card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+		.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+		footer{padding:24px 0;text-align:center;color:#718096;font-size:14px}
+		form input,form textarea{width:100%;padding:10px;border:1px solid #e2e8f0;border-radius:8px;margin-top:8px}
+		.grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+		@media(max-width:800px){.grid{grid-template-columns:1fr}}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container" style="display:flex;align-items:center">
+			<div class="brand">
+				<div class="logo">Coached by Alistair</div>
+				<div>
+					<div style="font-weight:800">Alistair Quinn</div>
+					<div style="font-size:12px;color:#718096">Online Coaching</div>
+				</div>
+			</div>
+			<nav>
+				<a href="#services">Services</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<div class="intro">
+				<h1>Personalized coaching to reach your next level</h1>
+				<p class="lead">Professional, structured coaching for career growth, leadership, and well-being. Practical plans, measurable progress, and supportive accountability.</p>
+				<a class="cta" href="#contact">Book a free consult</a>
+			</div>
+			<div class="card" style="width:320px">
+				<strong>Start today</strong>
+				<p style="margin:8px 0;color:#4a5568">Free 20-minute discovery call to clarify goals and create a roadmap.</p>
+				<ul style="padding-left:18px;margin:8px 0;color:#4a5568">
+					<li>Goal setting</li>
+					<li>Action plan</li>
+					<li>First steps</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="services">
+			<h2 style="margin-top:8px">Services</h2>
+			<div class="services">
+				<div class="card">
+					<h3>Career Coaching</h3>
+					<p>Resume & interview prep, job search strategy, promotion planning.</p>
+				</div>
+				<div class="card">
+					<h3>Leadership Coaching</h3>
+					<p>Develop influence, communication, and team performance.</p>
+				</div>
+				<div class="card">
+					<h3>Wellness & Productivity</h3>
+					<p>Routines, habits, and time management for sustainable results.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" style="margin-top:28px">
+			<div class="grid">
+				<div>
+					<h2>About</h2>
+					<p class="lead">I combine practical frameworks with individualized support to help clients move from intention to impact. Sessions are action-focused and tailored to your priorities.</p>
+					<h3 style="margin-top:12px">How it works</h3>
+					<ol style="color:#4a5568">
+						<li>Discovery call</li>
+						<li>Custom coaching plan</li>
+						<li>Weekly sessions + check-ins</li>
+					</ol>
+				</div>
+				<div class="card">
+					<strong>Testimonials</strong>
+					<p style="margin:8px 0;color:#4a5568">"Helped me get promoted within 6 months." — Client A</p>
+					<p style="margin:8px 0;color:#4a5568">"Clear, practical, and supportive." — Client B</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" style="margin-top:28px">
+			<h2>Contact</h2>
+			<div class="grid">
+				<div class="card">
+					<form action="#" method="post">
+						<label>Name</label>
+						<input type="text" name="name" required>
+						<label>Email</label>
+						<input type="email" name="email" required>
+						<label>Message</label>
+						<textarea name="message" rows="5" required></textarea>
+						<div style="margin-top:12px">
+							<button type="submit" class="cta" style="border:none">Send</button>
+						</div>
+					</form>
+				</div>
+				<div>
+					<div class="card">
+						<strong>Availability</strong>
+						<p style="margin:8px 0;color:#4a5568">Slots typically available on weekdays. Responds within 48 hours.</p>
+						<p style="margin:8px 0;color:#4a5568">Email: alistair@coachedbyalistair.co.uk</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">© Alistair Quinn — All rights reserved</div>
+	</footer>
+</body>
+</html>
