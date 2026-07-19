@@ -1,180 +1,107 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Alistair Quinn Coaching</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>CV — Alistair Quinn</title>
 	<style>
-		:root{--brand:#2b6cb0;--accent:#f6ad55;--bg:#f7fafc}
-		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;background:var(--bg);color:#1a202c}
-		header{background:white;box-shadow:0 2px 6px rgba(0,0,0,.06);}
-		.container{max-width:1000px;margin:0 auto;padding:24px}
-		.brand{display:flex;align-items:center;gap:12px}
-		.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#63b3ed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-		nav{margin-left:auto}
-		nav a{color:var(--brand);text-decoration:none;margin-left:16px;font-weight:600}
-		.hero{display:flex;flex-wrap:wrap;gap:24px;align-items:center;padding:48px 0}
-		.hero .intro{flex:1;min-width:260px}
-		h1{margin:0 0 12px;font-size:28px}
-		p.lead{margin:0 0 18px;color:#4a5568}
-		.cta{background:var(--brand);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
-		.card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
-		.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
-		footer{padding:24px 0;text-align:center;color:#718096;font-size:14px}
-		form{width:100%}
-		form input,form textarea{display:block;width:100%;max-width:100%;box-sizing:border-box;padding:10px;border:1px solid #e2e8f0;border-radius:8px;margin-top:8px}
-		.grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
-		@media(max-width:800px){.grid{grid-template-columns:1fr}}
+		:root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+		*{box-sizing:border-box}html,body{height:100%}
+		body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;smooth-font-smoothing:antialiased;background:linear-gradient(180deg,var(--bg),#071027);color:#e6eef6}
+		.wrap{max-width:1000px;margin:36px auto;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px)}
+		header{display:flex;gap:20px;align-items:center}
+		.avatar{width:120px;height:120px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px;color:#031523}
+		h1{margin:0;font-size:28px}
+		.meta{color:var(--muted);margin-top:6px}
+		.grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+		.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+		.section-title{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+		ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+		ul.skills li{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:#cfeaf3}
+		.contact p{margin:6px 0;color:var(--muted)}
+		.experience{display:flex;flex-direction:column;gap:12px}
+		.job{padding:12px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+		.job h3{margin:0;font-size:16px}
+		.job .when{font-size:13px;color:var(--muted)}
+		.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+		a.button{display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#02121a;text-decoration:none;font-weight:600}
+		footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+		@media(max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:96px;height:96px}}
 	</style>
 </head>
 <body>
-	<header>
-		<div class="container" style="display:flex;align-items:center">
-			<div class="brand">
-				<div class="logo">AQ</div>
-				<div>
-					<div style="font-weight:800">Alistair Quinn Coaching</div>
-					<div style="font-size:12px;color:#718096">Qualified Personal Trainer</div>
-				</div>
+	<main class="wrap">
+		<header>
+			<div class="avatar">AQ</div>
+			<div>
+				<h1>Alistair Quinn</h1>
+				<div class="meta">Software Engineer • Personal Trainer • Aberdeen, Scotland</div>
 			</div>
-			<nav>
-				<a href="/">Home</a>
-				<a href="#services">Services</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-				<a href="testimonials">Testimonials</a>
-			</nav>
-		</div>
-	</header>
+		</header>
 
-	<main class="container">
-		<section class="hero">
-			<div class="intro">
-				<h1>Online fitness coaching</h1>
-				<p class="lead">Certified personal training, tailored workouts delivered online. Get stronger, leaner, and fitter with coaching that fits your lifestyle.</p>
-				<a class="cta" href="#contact">Book a free consult</a>
-			</div>
-			<div class="card" style="width:320px">
-				<strong>Start today</strong>
-				<p style="margin:8px 0;color:#4a5568">Free 20-minute discovery call to clarify your goals and current fitness level.</p>
-				<ul style="padding-left:18px;margin:8px 0;color:#4a5568">
-					<li>Goal setting</li>
-					<li>Personalized training plan</li>
-					<li>Weekly check-ins</li>
-				</ul>
-			</div>
-		</section>
+		<div class="grid">
+			<section>
+				<div class="card">
+					<div class="section-title">Summary</div>
+					<p style="margin:0;color:var(--muted)">Product-minded software engineer with years of experience building web applications and APIs. Enjoys designing simple systems, mentoring teams, and improving developer experience.</p>
+				</div>
 
-		<section id="services">
-			<h2 style="margin-top:8px">Services</h2>
-			<div class="services">
-				<div class="card">
-					<h3>Online Personal Training</h3>
-					<p>Custom strength and conditioning programs designed for your body, equipment, and schedule.</p>
-				</div>
-				<div class="card">
-					<h3>Goal Setting</h3>
-					<p>Helping you define clear, achievable fitness goals and create a plan to reach them.</p>
-				</div>
-				<div class="card">
-					<h3>Accountability</h3>
-					<p>Weekly check-ins, progress tracking, and motivation to keep you consistent and confident.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="about" style="margin-top:28px">
-			<div class="grid">
-				<div>
-					<h2>About</h2>
-					<p class="lead">I am a qualified personal trainer offering online fitness coaching. My approach combines proven training methods so you can build strength, confidence, and lasting habits.</p>
-					<h3 style="margin-top:12px">How it works</h3>
-					<ol style="color:#4a5568">
-						<li>Discovery call</li>
-						<li>Tailored training</li>
-						<li>Weekly coaching + progress check-ins</li>
-					</ol>
-				</div>
-				<div class="card">
-					<strong>Testimonials</strong>
-					<p style="margin:8px 0;color:#4a5568">"I finally feel strong and consistent again." — Client A</p>
-					<p style="margin:8px 0;color:#4a5568">"The fitness advice was easy to follow and really worked." — Client B</p>
-					<br/>
-					<a class="cta" href="testimonials">View Testimonials</a>
-				</div>
-			</div>
-		</section>
-
-		<section id="qualifications" style="margin-top:28px">
-			<h2>Qualifications</h2>
-			<div class="services">
-				<div class="card">
-					<h3>Level 2 Gym Instructor</h3>
-					<p>Certified at Level 2, demonstrating strong fundamentals in fitness instruction, exercise programming, and client support.</p>
-				</div>
-				<div class="card">
-					<h3>Level 3 Personal Trainer</h3>
-					<p>Advanced Level 3 certification in personal training with expertise in bespoke coaching, progression planning, and lifestyle coaching.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="social" style="margin-top:28px">
-			<h2>Social Media</h2>
-			<div class="card" style="display:inline-flex;flex-direction:column;gap:10px;max-width:420px">
-				<p class="lead">Follow @alistairquinncoaching for fitness tips, motivation, and coaching updates.</p>
-				<p style="margin:0;color:#4a5568">Instagram: <a href="https://instagram.com/alistairquinncoaching" style="color:var(--brand);text-decoration:none">@alistairquinncoaching</a></p>
-				<p style="margin:0;color:#4a5568">Facebook: <a href="https://facebook.com/alistairquinncoaching" style="color:var(--brand);text-decoration:none">@alistairquinncoaching</a></p>
-				<p style="margin:0;color:#4a5568">TikTok: <a href="https://tiktok.com/@alistairquinncoaching" style="color:var(--brand);text-decoration:none">@alistairquinncoaching</a></p>
-			</div>
-		</section>
-
-		<section id="contact" style="margin-top:28px">
-			<h2>Contact</h2>
-			<div class="grid">
-				<div class="card">
-					<form action="#" method="post">
-						<label>Name</label>
-						<input type="text" name="name" required>
-						<label>Message</label>
-						<textarea name="message" rows="5" required></textarea>
-						<div style="margin-top:12px">
-							<button type="submit" class="cta" style="border:none">Send</button>
+				<div class="card" style="margin-top:14px">
+					<div class="section-title">Experience</div>
+					<div class="experience">
+						<div class="job">
+							<h3>Software Engineer I - Sword Group</h3>
+							<div class="when">2024 — Present</div>
+							<p style="margin-top:8px;color:var(--muted)">Working on various software projects and contributing to the development of new features.</p>
 						</div>
-					</form>
-				</div>
-				<div>
-					<div class="card">
-						<strong>Availability</strong>
-						<p style="margin:8px 0;color:#4a5568">Slots typically available on weekdays. Responds within 48 hours.</p>
-						<p style="margin:8px 0;color:#4a5568">Email: alistair@alistairquinncoaching.com or message me on social media</p>
+
+						<div class="job">
+							<h3>Software Engineer — Impact Subsea</h3>
+							<div class="when">2022 — 2024</div>
+							<p style="margin-top:8px;color:var(--muted)">Built and maintained software solutions for the subsea industry.</p>
+						</div>
+
+                        <div class="job">
+							<h3>Software Engineer — Leonardo UK</h3>
+							<div class="when">2021 - 2022</div>
+							<p style="margin-top:8px;color:var(--muted)">Built and maintained software solutions for the defence industry.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+
+			<aside>
+				<div class="card">
+					<div class="section-title">Contact</div>
+					<div id="contact" class="contact">
+						<p>Email: beardedbearaldo@gmail.com</p>
+					</div>
+				</div>
+
+				<div class="card" style="margin-top:14px">
+					<div class="section-title">Skills</div>
+					<ul class="skills">
+						<li>C#</li>
+						<li>Blazor</li>
+						<li>SQL</li>
+						<li>Team Working</li>
+						<li>Personal Training</li>
+					</ul>
+				</div>
+
+				<div class="card" style="margin-top:14px">
+					<div class="section-title">Education</div>
+					<div style="color:var(--muted)">
+						BSc Hons Computing: Application Software Development — Robert Gordon University (2014 — 2018)
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<footer>
+            Copyright &copy; 2026 Alistair Quinn. All rights reserved.
+		</footer>
 	</main>
 
-	<footer>
-		<div class="container">© Alistair Quinn — All rights reserved</div>
-	</footer>
-
-    <script>
-        // Simple form submission handler
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Get Name, Email, and Message values
-            const name = this.name.value;
-            const message = this.message.value;
-
-            // Crate a mailto link
-            const mailtoLink = `mailto:alistair@alistairquinncoaching.com?subject= Coached by Alistair Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
-
-            // Open the mailto link
-            window.open(mailtoLink, '_blank');
-
-            this.reset();
-        });
-    </script>
 </body>
 </html>
