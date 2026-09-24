@@ -10,7 +10,7 @@
 		body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;-webkit-font-smoothing:antialiased;background:linear-gradient(180deg,var(--bg),#071027);color:#e6eef6}
 		.wrap{max-width:1000px;margin:36px auto;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px)}
 		header{display:flex;gap:20px;align-items:center}
-		.avatar{width:120px;height:120px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px;color:#031523}
+		.avatar{width:120px;height:120px;border-radius:14px;object-fit:cover;display:block}
 		h1{margin:0;font-size:28px}
 		.meta{color:var(--muted);margin-top:6px}
 		.intro{max-width:680px;line-height:1.7}
@@ -39,7 +39,7 @@
 <body>
 	<main class="wrap">
 		<header>
-			<div class="avatar">AQ</div>
+			<img class="avatar" src="alistair.jpg" alt="Alistair Quinn" />
 			<div>
 				<h1>Alistair Quinn</h1>
 				<div class="meta">Software Engineer · Aberdeen, Scotland</div>
